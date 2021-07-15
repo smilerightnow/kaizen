@@ -4,6 +4,9 @@ body{
 	text-align:center;
 	background-color: #FAFAFA;
 }
+a{
+	color: #0067de;
+}
 .h{
 	color: #25D0F0;
 	padding-left: 2em;
@@ -18,6 +21,10 @@ body{
 }
 .l{
 	margin-bottom: 20px
+}
+.l > span > a {
+	color: #65FF00;
+	
 }
 ul{
 	display: inline-block;
