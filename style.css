@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
 	scroll-behavior: smooth !important;
+	box-sizing: border-box;
 }
 body{
 	font-family: 'Open Sans', sans-serif;
@@ -37,6 +38,7 @@ ul{
 }
 li{
 	font-size:18px;
+	margin-bottom: 7px;
 }
 #data, ul{
 	text-align:left;
@@ -45,6 +47,60 @@ li{
 	padding-left:1em;
 	background-color:#1A1C1E;
 	border-radius: 15px;
+}
+.mySlides {display: none}
+ul {vertical-align: middle;text-align:center}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align:left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8)
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
 }
 @media only screen and (min-width: 992px) {
 	body{
