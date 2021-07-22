@@ -103,6 +103,10 @@ ul {vertical-align: middle;text-align:center}
 		margin-left: 5em;
 		margin-right: 5em;
 	}
+	h4{
+		margin-left: 11em;
+		margin-right: 11em;
+	}
 }
 @media only screen and (max-width: 992px) {
 	ul, .b{
