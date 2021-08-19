@@ -38,52 +38,7 @@
         <div class="slideshow-container">
             <div id="PUTslidesHERE" style="text-align:center">
                 <h2>My latest projects:</h2>
-		    
-		    
-		      <div class="mySlides">
-                    <ul>
-                        <li>★ NFT Art generator ★</li>
-			     <li>★ Discord Webhooks ★</li>
-			    <li>★ Large text books to <a href="/Demos/TextToImages.png">images</a> ★</li>
-			     <li>★ ShadowPay API to discord ★</li>
-			     <li>★ Stock startegies info to Discord ★</li>
-			     <li>★ LocalBitcoins trading bot ★</li>
-                    </ul>
-                </div>
-		    
-		    
-                <div class="mySlides">
-                    <ul>
-                        <li>★ Modifying a large program's source code and adding new features ★</li>
-                        <li>★ Wordpress template ★</li>
-                        <li>★ Youtube uploader bot ★</li>
-                        <li>★ Basketball score scraper ★</li>
-                        <li>★ Discord bot ★</li>
-			     <li>★ Adsense's ads scraper ★</li>
-                    </ul>
-                </div>
-
-                <div class="mySlides">
-                    <ul>
-			    <li>★ Reddit bot ★</li>
-                        <li>★ Stock data scraper ★</li>
-                        <li>★ Homedepot scraper ★</li>
-                        <li>★ Inspirational Quotes to images bot ★</li>
-                        <li>★ Steam scraper ★</li>
-                        <li>★ wikipedia to csv bot ★</li>
-                    </ul>
-                </div>
-
-                <div class="mySlides">
-                    <ul>
-			    <li>★ Ebay scraper and send to email ★</li>
-                        <li>★ Tiktok downloader ★</li>
-                        <li>★ Google sheet bot ★</li>
-                        <li>★ Dextools.io trending bot ★</li>
-                        <li>★ Sending email bot ★</li>
-                        <li>★ Stock news scraper ★</li>
-                    </ul>
-                </div>
+		      
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -92,34 +47,6 @@
         </div>
 
 </div>
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-    
-                slides[slideIndex - 1].style.display = "block";
-            }
-        </script>
 	    
 	    <div style="text-align:center">
 			<h2>Latest feedback:</h2>
@@ -171,6 +98,78 @@
             lineDelay: 500
         })
     </script>
+	<script>
+		WORK = [
+		'<li>★ NFT Art generator ★</li>',
+		'<li>★ Discord Webhooks ★</li>',
+		'<li>★ Large text books to <a href="/Demos/TextToImages.png">images</a> ★</li>',
+		'<li>★ ShadowPay API to discord ★</li>',
+		'<li>★ Stock startegies info to Discord ★</li>',
+		'<li>★ LocalBitcoins trading bot ★</li>',
+		"<li>★ Modifying a large program's source code and adding new features ★</li>",
+		'<li>★ Wordpress template ★</li>',
+		'<li>★ Youtube uploader bot ★</li>',
+		'<li>★ Basketball score scraper ★</li>',
+		'<li>★ Discord bot ★</li>',
+		"<li>★ Adsense's ads scraper ★</li>",
+		'<li>★ Reddit bot ★</li>',
+		'<li>★ Stock data scraper ★</li>',
+		'<li>★ Homedepot scraper ★</li>',
+		'<li>★ Inspirational Quotes to images bot ★</li>',
+		'<li>★ Steam scraper ★</li>',
+		'<li>★ wikipedia to csv bot ★</li>',
+		'<li>★ Ebay scraper and send to email ★</li>',
+		'<li>★ Tiktok downloader ★</li>',
+		'<li>★ Google sheet bot ★</li>',
+		'<li>★ Dextools.io trending bot ★</li>',
+		'<li>★ Sending email bot ★</li>',
+		'<li>★ Stock news scraper ★</li>',
+		];
+
+		const container = document.getElementById("PUTslidesHERE")
+
+		var i = 0;
+		var to_add = "<div class='mySlides'><ul>"
+
+		WORK.forEach(function slider(w){
+			to_add += w
+			i += 1
+			if (i == 6){
+				i = 0
+				to_add += "</ul></div>"
+				container.innerHTML += to_add
+				to_add = "<div class='mySlides'><ul>"
+				}
+			});
+	</script>
+	<script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+    
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
 
 </body>
 
