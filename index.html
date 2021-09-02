@@ -131,21 +131,25 @@
 		'<li>★ Stock news scraper ★</li>',
 		];
 
-		const container = document.getElementById("PUTslidesHERE")
+		const container = document.getElementById("PUTslidesHERE");
 
 		var i = 0;
-		var to_add = "<div class='mySlides'><ul>"
+		var to_add = "<div class='mySlides'><ul>";
 
 		WORK.forEach(function slider(w){
-			to_add += w
-			i += 1
+			to_add += w;
+			i += 1;
 			if (i == 6){
 				i = 0
-				to_add += "</ul></div>"
-				container.innerHTML += to_add
-				to_add = "<div class='mySlides'><ul>"
+				to_add += "</ul></div>";
+				container.innerHTML += to_add;
+				to_add = "<div class='mySlides'><ul>";
 				}
 			});
+		if(to_add != "<div class='mySlides'><ul>"){
+			to_add += "</ul></div>";
+			container.innerHTML += to_add;
+		}
 	</script>
 	<script>
             var slideIndex = 1;
