@@ -50,7 +50,7 @@ li{
 #termynal{
 	background-color:#1A1C1E;
 }
-#p{
+.p{
     width: 100%;
     max-width: 100%;
     font-size: 18px;
@@ -62,6 +62,10 @@ li{
 }
 .mySlides {display: none}
 ul {vertical-align: middle;text-align:center}
+
+.fdb{
+    text-align:center
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -112,5 +116,6 @@ ul {vertical-align: middle;text-align:center}
 	ul, .b{
 		display:block;
 	}
+	.ee{top: 100%;}
 
 }
