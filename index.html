@@ -34,7 +34,7 @@
             <h1 data-ty>Hey, My name is Mohamed Admane</h1>
             <h3 data-ty>I'm a software developer focused on bots and automation, but I make websites too. I'm a freelancer and a student in computer science. My passion is helping people make their life easier.</h3><h3 data-ty>Think I could help with some project you are working on? <a href="#contact">Contact me</a>, it would be a pleasure.<br><br> Check out my projects below :)</h3>
         </div>
-<div id="p">
+<div class="p">
         <div class="slideshow-container">
             <div id="PUTslidesHERE" style="text-align:center">
                 <h2>My latest projects:</h2>
@@ -47,13 +47,59 @@
         </div>
 
 </div>
-	    
-	    <div style="text-align:center">
-			<h2>Latest feedback:</h2>
-			<h4>Mohamed solved my two feature requests brilliantly. He has the right skills in Python and great understanding. Also he did a great job at explaining me how to install and run. I would definitely work with him again.<p><b>⭐⭐⭐⭐⭐ By Martin .G on UpWork.com</b></p></h4>
-			
-			
+
+
+<div class="p" style="font-size:17px;line-height:1">
+    <h2>Latest feedback:</h2>
+        <div class="slideshow-container">
+
+        <div class="fdb">
+          <h4>I am very happy that Mohamed took the job he is super friendly, answered very fast, deliverd the project even before the deadline, has a excellent communication and understood me just perfectly. gave me all the instructions i needed
+thank you so much, i am looking forward to work with you again<p><b>⭐⭐⭐⭐⭐ By David M on UpWork.com</b></p></h4>
+
         </div>
+
+        <div class="fdb">
+          <h4>Excellent work! Highly recommend.<p><b>⭐⭐⭐⭐⭐ By John .S on UpWork.com</b></p></h4>
+
+        </div>
+
+        <div class="fdb">
+          <h4>Mohamed solved my two feature requests brilliantly. He has the right skills in Python and great understanding. Also he did a great job at explaining me how to install and run. I would definitely work with him again.<p><b>⭐⭐⭐⭐⭐ By Martin .G on UpWork.com</b></p></h4>
+
+        </div>
+
+            <div class="fdb">
+          <h4>Mohamed is the guy. You tell him what you need he gets it done and fast.<p><b>⭐⭐⭐⭐⭐ By Mcbreezy066 on Reddit.com</b></p></h4>
+
+        </div>
+
+        <a class="prev ee" onclick="plusSlide(-1)">❮</a>
+        <a class="next ee" onclick="plusSlide(1)">❯</a>
+
+        </div>
+</div>
+
+<script>
+var slideInx = 1;
+showSlide(slideInx);
+
+function plusSlide(n) {
+  showSlide(slideInx += n);
+}
+
+function showSlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("fdb");
+  if (n > slides.length) {slideInx = 1}
+  if (n < 1) {slideInx = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideInx-1].style.display = "block";
+}
+</script>
 	    
         <div id="data" data-termynal>
 			<span style="text-align:center;" data-ty="input">About me</span>
@@ -67,7 +113,7 @@
             </div>
             <div class="l" data-ty><span class="h">"A little experience"</span><span class="white">:</span><span class="b"><span class="white">[</span>"Game dev"<span class="white">,</span> "Node.js"<span class="white">,</span> "2D animation"<span class="white">,</span> "Pixel art"<span class="white">,</span> "3D modelling/animation"<span class="white">]</span><span class="white">,</span></span>
             </div>
-            <div class="l" data-ty><span class="h">"interests"</span><span class="white">:</span><span class="b"><span class="white">[</span>"Learning"<span class="white">,</span> "Adventure"<span class="white">,</span> "Traveling"<span class="white">,</span> "Movies"<span class="white">,</span> "Inventions"<span class="white">,</span> "Football"<span class="white">,</span> "<a href="https://lichess.org/@/smile_right_now">Chess</a>"<span class="white">]</span><span class="white">,</span></span>
+            <div class="l" data-ty><span class="h">"interests"</span><span class="white">:</span><span class="b"><span class="white">[</span>"Learning"<span class="white">,</span> "Adventure"<span class="white">,</span> "Traveling"<span class="white">,</span> "Movies"<span class="white">,</span> "Inventions"<span class="white">,</span> "Football"<span class="white">,</span> "Investing"<span class="white">]</span><span class="white">,</span></span>
             </div>
             <div class="l" data-ty><span class="h">"Languages"</span><span class="white">:</span><span class="b"><span class="white">[</span>"English"<span class="white">,</span> "Arabic"<span class="white">,</span> "French"<span class="white">,</span> "Tamazight"<span class="white">,</span> "Learning more"<span class="white">]</span><span class="white">,</span></span>
             </div>
