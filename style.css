@@ -120,5 +120,9 @@ ul {vertical-align: middle;text-align:center}
 		display:block;
 	}
 	.ee{top: 100%;}
+	
+	#contacts_urls > a, #contacts_urls > span {
+		display: block;
+	}
 
 }
