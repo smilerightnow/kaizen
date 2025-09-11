@@ -1,0 +1,250 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mohamed Admane's Portfolio</title>
+    <meta name="description" content="I'm a software/web developer.">
+    <meta name="author" content="Mohamed Admane">
+
+    <meta property="og:title" content="Mohamed Admane's Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaizen.quest">
+    <meta property="og:description" content="I'm a software/web developer.">
+    <meta property="og:image" content="image.png">
+    <!-- to change later -->
+
+    <link rel="shortcut icon" href="i.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="termynal.css">
+</head>
+
+<body>
+
+    <main>
+        <div id="termynal" data-termynal>
+            <span data-ty="input">introduction</span>
+            <h1 data-ty>Hey, My name is Mohamed Admane</h1>
+            <h3 data-ty>I'm a Software Developer with +5 years of experience, focused on the Backend. I automate, I make APIs, websites and bots. I'm a freelancer and a student in computer science. My passion is helping people make their life easier.</h3><h3 data-ty>Think I could help with some project you are working on? <a href="#contact">Contact me</a>, it would be a pleasure.<br><br> Check out my projects below :)</h3>
+        </div>
+<div class="p">
+        <div class="slideshow-container">
+            <div id="PUTslidesHERE" style="text-align:center">
+                <h2>My latest projects:</h2>
+		      
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+</div>
+
+
+<div class="p" style="font-size:17px;line-height:1">
+    <h2>Latest feedbacks:</h2>
+        <div class="slideshow-container">
+
+        <div class="fdb">
+          <h4>I am very happy that Mohamed took the job he is super friendly, answered very fast, deliverd the project even before the deadline, has a excellent communication and understood me just perfectly. gave me all the instructions i needed
+thank you so much, i am looking forward to work with you again<p><b>⭐⭐⭐⭐⭐ <br> <br>By David M on UpWork.com</b></p></h4>
+
+        </div>
+
+        <div class="fdb">
+          <h4>Excellent work! Highly recommend.<p><b>⭐⭐⭐⭐⭐<br> <br>By John .S on UpWork.com</b></p></h4>
+
+        </div>
+
+        <div class="fdb">
+          <h4>Mohamed solved my two feature requests brilliantly. He has the right skills in Python and great understanding. Also he did a great job at explaining me how to install and run. I would definitely work with him again.<p><b>⭐⭐⭐⭐⭐ <br><br>By Martin .G on UpWork.com</b></p></h4>
+
+        </div>
+
+            <div class="fdb">
+          <h4>Mohamed is the guy. You tell him what you need he gets it done and fast.<p><b>⭐⭐⭐⭐⭐ <br><br>By Mcbreezy066 on Reddit.com</b></p></h4>
+
+        </div>
+
+        <a class="prev ee" onclick="plusSlide(-1)">❮</a>
+        <a class="next ee" onclick="plusSlide(1)">❯</a>
+
+        </div>
+</div>
+<br>
+<script>
+var slideInx = 1;
+showSlide(slideInx);
+
+function plusSlide(n) {
+  showSlide(slideInx += n);
+}
+
+function showSlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("fdb");
+  if (n > slides.length) {slideInx = 1}
+  if (n < 1) {slideInx = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideInx-1].style.display = "block";
+}
+</script>
+	    
+        <div id="data" data-termynal>
+			<span style="text-align:center;" data-ty="input">About me</span>
+            <span class="white" data-ty>{</span>
+            <div class="l" data-ty><span class="h">"General information"</span><span class="white">:</span><span class="b">"I'm from Algeria, living currently in France. I was born in 2002."<span class="white">,</span></span>
+            </div>
+            <div class="l" data-ty><span class="h">"Education"</span><span class="white">:</span><span class="b">"I'm currently a student in computer science in university."<span class="white">,</span></div>
+            <div class="l" data-ty><span class="h">"Skills"</span><span class="white">:</span><span class="b"><span class="white">[</span>"Python"<span class="white">,</span> "Backend"<span class="white">,</span> "REST APIs"<span class="white">,</span> "Git"<span class="white">,</span> "Docker"<span class="white">,</span> "AWS"<span class="white">,</span> "Redis"<span class="white">,</span> "PHP"<span class="white">,</span> "SQL"<span class="white">,</span> "QA"<span class="white">,</span> "JavaScript"<span class="white">,</span> "HTML"<span class="white">,</span> "CSS"<span class="white">]</span><span class="white">,</span></span>
+            </div>
+            <div class="l" data-ty><span class="h">"I can do"</span><span class="white">:</span><span class="b"><span class="white">[</span>"Bots"<span class="white">,</span> "Websites"<span class="white">,</span> "Automation"<span class="white">,</span> "APIs"<span class="white">,</span> "Desktop applications"<span class="white">,</span> "Web scrapping"<span class="white">,</span> "Browser extensions"<span class="white">]</span><span class="white">,</span></span>
+            </div>
+            <div class="l" data-ty><span class="h">"A little experience"</span><span class="white">:</span><span class="b"><span class="white">[</span>"Game dev"<span class="white">,</span> "Android dev"<span class="white">,</span> "Node.js"<span class="white">,</span> "Java"<span class="white">,</span> "Rust"<span class="white">,</span> "C/C++"<span class="white">,</span> "2D animation"<span class="white">,</span> "Pixel art"<span class="white">,</span> "3D modelling/animation"<span class="white">]</span><span class="white">,</span></span>
+            </div>
+            <div class="l" data-ty><span class="h">"interests"</span><span class="white">:</span><span class="b"><span class="white">[</span>"Learning"<span class="white">,</span> "Reading"<span class="white">,</span> "Adventure"<span class="white">,</span> "Traveling"<span class="white">,</span> "History"<span class="white">,</span> "Inventions"<span class="white">,</span> "Investing"<span class="white">]</span><span class="white">,</span></span>
+            </div>
+            <div class="l" data-ty><span class="h">"Languages"</span><span class="white">:</span><span class="b"><span class="white">[</span>"English"<span class="white">,</span> "Arabic"<span class="white">,</span> "French"<span class="white">,</span> "Tamazight"<span class="white">,</span> "Learning more"<span class="white">]</span><span class="white">,</span></span>
+            </div>
+            <span class="white" data-ty>}</span>
+        </div>
+
+        <h2 id="contact">Contact me!</h2>
+        <h3 id ="contacts_urls">
+	    <a href="mailto:admane@kaizen.quest">admane@kaizen.quest</a>  <span> || </span>
+            <a href="https://github.com/smilerightnow/">Github</a>  <span> || </span>
+            <a href="https://www.linkedin.com/in/mohamed-admane/">LinkedIn</a>  <span> || </span>
+            <a href="https://www.upwork.com/freelancers/~0151ce9829fef40b7c">UpWork</a>  <span> || </span>
+	    Discord: smile_right_now#1902
+        </h3>
+    </main>
+
+    <footer style="text-align: center">
+        <p>Made with ❤️ by Mohamed Admane</p>
+        <p><small>Kaizen is a Japanese term meaning "change for the better" or "continuous improvement".</small></p>
+    </footer>
+    <script src="termynal.js"></script>
+    <script>
+        var termynal = new Termynal('#termynal', {
+            typeDelay: 50,
+            lineDelay: 1000
+        })
+        var termyal = new Termynal('#data', {
+            typeDelay: 50,
+            lineDelay: 500
+        })
+    </script>
+	<script>
+		WORK = [
+		'<li>★ Scraping hundreds of travel agencies ★</li>',
+		'<li>★ GUI program to batch edit PDF files ★</li>',
+		'<li>★ Browser extension to automate accepting amazon job shifts ★</li>',
+		'<li>★ Creating an Inventory management site for<br>a jewelry store (Django+Bootstrap) ★</li>',
+		'<li>★ Discord Bot that generates pdf from UPTODATE(medical site) studies ★</li>',
+		'<li>★ Google Form Appscript that will create new projects on Asana and Slack ★</li>',
+		'<li>★ Discord bot that tracks new threads of ecommerce forum ★</li>',
+		'<li>★ Parse Google flights search results to json (chrome extension)★</li>',
+		'<li>★ Send email campaigns with google sheets appscript ★</li>',
+		'<li>★ Scrape every email from any web page ★</li>',
+		'<li>★ <a href="https://gist.github.com/smilerightnow/9b736101829bbae98da3abb1dfff0330">Latest tweets to Discord</a> ★</li>',
+		"<li>★ Bot tracking latest watch prices<br>from chrono24.com and storing them in an SQL db ★</li>",
+		'<li>★ <a href="https://github.com/smilerightnow/python_3d">3D Python rendering library + CAD</a> ★</li>',
+		'<li>★ <a href="https://github.com/smilerightnow/Traceroute_On_World_Map">Draw Traceroute results in a world map</a> ★</li>',
+		'<li>★ <a href="https://github.com/smilerightnow/run-python-in-browser">A python browser REPL</a> ★</li>',
+		'<li>★ Track and save flight deals ★</li>',
+		'<li>★ Adding features to opensource <a href="https://zim-wiki.org/" target="_blank">zimwiki</a> ★</li>',
+		'<li>★ Drawing bridges on a map<br> of Germany according to their <a href="https://imgur.com/a/jPVlTbg/" target="_blank">condition</a> ★</li>',
+		'<li>★ New emails to discord ★</li>',
+		'<li>★ WebSockets Scraping★</li>',
+		'<li>★ NFT Art generator ★</li>',
+		'<li>★ Chrome extension ★</li>',
+		'<li>★ Discord Webhooks ★</li>',
+		'<li>★ Large text books to <a href="https://imgur.com/a/0c0rnwg" target="_blank">images</a> ★</li>',
+		"<li>★ Modifying program's source code<br> & adding new features ★</li>",
+		'<li>★ Discord bot ★</li>',
+		'<li>★ Stock data scraper ★</li>',
+		'<li>★ ShadowPay API to discord ★</li>',
+		'<li>★ Stock startegies into Discord ★</li>',
+		'<li>★ LocalBitcoins trading bot ★</li>',
+		'<li>★ Sending email bot ★</li>',
+		'<li>★ tradeit.gg scraper ★</li>',
+		'<li>★ swap.gg scraper ★</li>',
+		'<li>★ cs.deals scraper to Discord ★</li>',
+		'<li>★ buff.163.com scraper to discord ★</li>',
+		'<li>★ Yahoo Finance scraper ★</li>',
+		'<li>★ FinViz scraper ★</li>',
+		'<li>★ Wordpress template ★</li>',
+		'<li>★ Youtube uploader bot ★</li>',
+		'<li>★ Basketball score scraper ★</li>',
+		"<li>★ Adsense's ads scraper ★</li>",
+		'<li>★ Reddit bot ★</li>',
+		'<li>★ Homedepot scraper ★</li>',
+		'<li>★ Inspirational Quotes to images bot ★</li>',
+		'<li>★ Steam scraper ★</li>',
+		'<li>★ wikipedia to csv bot ★</li>',
+		'<li>★ Ebay scraper and send to email ★</li>',
+		'<li>★ Tiktok downloader ★</li>',
+		'<li>★ Google sheet bot ★</li>',
+		'<li>★ Stock news scraper ★</li>',
+		];
+
+		const container = document.getElementById("PUTslidesHERE");
+
+		var i = 0;
+		var to_add = "<div class='mySlides'><ul>";
+
+		WORK.forEach(function slider(w){
+			to_add += w;
+			i += 1;
+			if (i == 6){
+				i = 0
+				to_add += "</ul></div>";
+				container.innerHTML += to_add;
+				to_add = "<div class='mySlides'><ul>";
+				}
+			});
+		if(to_add != "<div class='mySlides'><ul>"){
+			to_add += "</ul></div>";
+			container.innerHTML += to_add;
+		}
+	</script>
+	<script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+    
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+</body>
+
+</html>
